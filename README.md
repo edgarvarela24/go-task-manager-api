@@ -4,8 +4,7 @@ This is a RESTful API for managing tasks built with Go and PostgreSQL. Using the
 
 ## Prerequisites
 
-- Go (version 1.22.1 or later)
-- PostgreSQL
+- Docker Compose
 
 ## Setup
 
@@ -17,28 +16,6 @@ This is a RESTful API for managing tasks built with Go and PostgreSQL. Using the
     ```
     cd task-manager-api
     ```
-  
-- Create a `config.yml` file in the project root directory with the following content:
-    ```yaml
-    database:
-      host: localhost
-      port: 5432
-      user: your_username
-      password: your_password
-      name: your_database
-    ```
-  Replace `your_username`, `your_password`, and `your_database` with your specific PostgreSQL database credentials.
-
-
-- Set up the database:
-  - Install PostgreSQL and ensure it is running.
-  - Create a new database with the name you specified in the config.yml file.
-  - Run the setup.sql script to create the required table and insert initial data:
-    ```
-    psql -U your_username -d your_database -f setup.sql
-    ```
-
-    Replace `your_username` and `your_database` with the values from the config.yml file.
 
 ## Running the Application
 

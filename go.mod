@@ -7,4 +7,7 @@ require (
 	github.com/lib/pq v1.10.9
 )
 
-require github.com/jinzhu/inflection v1.0.0 // indirect
+require (
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	golang.org/x/crypto v0.16.0 // indirect
+)

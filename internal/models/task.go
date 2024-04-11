@@ -1,4 +1,4 @@
-package task_manager_api
+package models
 
 type Task struct {
 	ID          uint   `json:"id" gorm:"primary_key"`
